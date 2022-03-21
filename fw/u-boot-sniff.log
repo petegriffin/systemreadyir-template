@@ -1,0 +1,511 @@
+þþþþþþþþþþþþþ
+U-Boot TPL 2022.04-rc1 (Feb 02 2022 - 14:16:49)
+Channel 0: LPDDR4, 50MHz
+BW=32 Col=10 Bk=8 CS0 Row=15 CS1 Row=15 CS=2 Die BW=16 Size=2048MB
+Channel 1: LPDDR4, 50MHz
+BW=32 Col=10 Bk=8 CS0 Row=15 CS1 Row=15 CS=2 Die BW=16 Size=2048MB
+256B stride
+lpddr4_set_rate: change freq to 400000000 mhz 0, 1
+lpddr4_set_rate: change freq to 800000000 mhz 1, 0
+Trying to boot from BOOTROM
+Returning to boot ROM...
+
+U-Boot SPL 2022.04-rc1 (Feb 02 2022 - 14:16:49 +0000)
+Trying to boot from MMC1
+NOTICE:  BL31: v2.6(debug):v2.6-365-ge0a6a512b5-dirty
+NOTICE:  BL31: Built : 21:59:34, Feb  3 2022
+WARNING: BL31: cortex_a53: CPU workaround for 1530924 was missing!
+
+
+U-Boot 2022.04-rc1 (Feb 02 2022 - 14:16:49 +0000)
+
+SoC: Rockchip rk3399
+Reset cause: POR
+Model: Radxa ROCK Pi 4B
+DRAM:  3.9 GiB
+PMIC:  RK808 
+Core:  276 devices, 29 uclasses, devicetree: separate
+MMC:   mmc@fe310000: 2, mmc@fe320000: 1, mmc@fe330000: 0
+Loading Environment from nowhere... OK
+In:    serial
+Out:   serial
+Err:   serial
+Model: Radxa ROCK Pi 4B
+Net:   eth0: ethernet@fe300000
+starting USB...
+Bus usb@fe380000: USB EHCI 1.00
+Bus usb@fe3c0000: USB EHCI 1.00
+Bus usb@fe800000: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+Bus usb@fe900000: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+scanning bus usb@fe380000 for devices... 1 USB Device(s) found
+scanning bus usb@fe3c0000 for devices... 2 USB Device(s) found
+scanning bus usb@fe800000 for devices... 1 USB Device(s) found
+scanning bus usb@fe900000 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 1 Storage Device(s) found
+Hit any key to stop autoboot:  2  0
+=> 
+=> help
+?         - alias for 'help'
+base      - print or set address offset
+bdinfo    - print Board Info structure
+blkcache  - block cache diagnostics and control
+boot      - boot default, i.e., run 'bootcmd'
+bootd     - boot default, i.e., run 'bootcmd'
+bootefi   - Boots an EFI payload from memory
+bootelf   - Boot from an ELF image in memory
+booti     - boot Linux kernel 'Image' format from memory
+bootm     - boot application image from memory
+bootp     - boot image via network using BOOTP/TFTP protocol
+bootvx    - Boot vxWorks from an ELF image
+bootz     - boot Linux zImage image from memory
+cmp       - memory compare
+coninfo   - print console devices and information
+cp        - memory copy
+crc32     - checksum calculation
+date      - get/set/reset date & time
+dfu       - Device Firmware Upgrade
+dhcp      - boot image via network using DHCP/TFTP protocol
+dm        - Driver model low level access
+echo      - echo args to console
+editenv   - edit environment variable
+efidebug  - Configure UEFI environment
+env       - environment handling commands
+exit      - exit script
+ext2load  - load binary file from a Ext2 filesystem
+ext2ls    - list files in a directory (default /)
+ext4load  - load binary file from a Ext4 filesystem
+ext4ls    - list files in a directory (default /)
+ext4size  - determine a file's size
+false     - do nothing, unsuccessfully
+fastboot  - run as a fastboot usb or udp device
+fatinfo   - print information about filesystem
+fatload   - load binary file from a dos filesystem
+fatls     - list files in a directory (default /)
+fatmkdir  - create a directory
+fatrm     - delete a file
+fatsize   - determine a file's size
+fatwrite  - write file into a dos filesystem
+fdt       - flattened device tree utility commands
+fstype    - Look up a filesystem type
+fstypes   - List supported filesystem types
+go        - start application at address 'addr'
+gpt       - GUID Partition Table
+gzwrite   - unzip and write memory to block device
+help      - print command description/usage
+iminfo    - print header information for application image
+imxtract  - extract a part of a multi-image
+itest     - return true/false on integer compare
+lcdputs   - print string on video framebuffer
+ln        - Create a symbolic link
+load      - load binary file from a filesystem
+loadb     - load binary file over serial line (kermit mode)
+loads     - load S-Record file over serial line
+loadx     - load binary file over serial line (xmodem mode)
+loady     - load binary file over serial line (ymodem mode)
+loop      - infinite loop on address range
+ls        - list files in a directory (default /)
+lzmadec   - lzma uncompress a memory region
+md        - memory display
+mdio      - MDIO utility commands
+mii       - MII utility commands
+mm        - memory modify (auto-incrementing address)
+mmc       - MMC sub system
+mmcinfo   - display MMC info
+mw        - memory write (fill)
+net       - NET sub-system
+nfs       - boot image via network using NFS protocol
+nm        - memory modify (constant address)
+nvme      - NVM Express sub-system
+optee_rpmb- Provides commands for testing secure storage on RPMB on OPTEE
+panic     - Panic with optional message
+part      - disk partition related commands
+pci       - list and access PCI Configuration Space
+ping      - send ICMP ECHO_REQUEST to network host
+pinmux    - show pin-controller muxing
+printenv  - print environment variables
+pxe       - commands to get and boot from pxe files
+random    - fill memory with random pattern
+reset     - Perform RESET of the CPU
+rtc       - RTC subsystem
+run       - run commands in an environment variable
+save      - save file to a filesystem
+setcurs   - set cursor position within screen
+setenv    - set environment variables
+sf        - SPI flash sub-system
+showvar   - print local hushshell variables
+size      - determine a file's size
+sleep     - delay execution for some time
+source    - run script from memory
+sysboot   - command to get and boot from syslinux files
+test      - minimal test like /bin/sh
+tftpboot  - boot image via network using TFTP protocol
+time      - run commands and summarize execution time
+tpm       - Issue a TPMv1.x command
+tpm2      - Issue a TPMv2.x command
+true      - do nothing, successfully
+unlz4     - lz4 uncompress a memory region
+unzip     - unzip a memory region
+usb       - USB sub-system
+usbboot   - boot from USB device
+version   - print monitor, compiler and linker version
+=> version
+U-Boot 2022.04-rc1 (Feb 02 2022 - 14:16:49 +0000)
+
+aarch64-poky-linux-gcc (GCC) 11.2.0
+GNU ld (GNU Binutils) 2.38.20220210
+=> printenv
+altbootcmd=setenv boot_syslinux_conf extlinux/extlinux-rollback.conf;run distro_bootcmd
+arch=arm
+baudrate=1500000
+board=evb_rk3399
+board_name=evb_rk3399
+boot_a_script=load ${devtype} ${devnum}:${distro_bootpart} ${scriptaddr} ${prefix}${script}; source ${scriptaddr}
+boot_efi_binary=load ${devtype} ${devnum}:${distro_bootpart} ${kernel_addr_r} efi/boot/bootaa64.efi; if fdt addr ${fdt_addr_r}; then bootefi ${kernel_addr_r} ${fdt_addr_r};else bootefi ${kernel_addr_r} ${fdtcontroladdr};fi
+boot_efi_bootmgr=if fdt addr ${fdt_addr_r}; then bootefi bootmgr ${fdt_addr_r};else bootefi bootmgr;fi
+boot_extlinux=sysboot ${devtype} ${devnum}:${distro_bootpart} any ${scriptaddr} ${prefix}${boot_syslinux_conf}
+boot_net_usb_start=usb start
+boot_pci_enum=pci enum
+boot_prefixes=/ /boot/
+boot_script_dhcp=boot.scr.uimg
+boot_scripts=boot.scr.uimg boot.scr
+boot_syslinux_conf=extlinux/extlinux.conf
+boot_targets=mmc1 mmc0 nvme0 usb0 pxe dhcp sf0 
+bootcmd=run distro_bootcmd
+bootcmd_dhcp=devtype=dhcp; run boot_net_usb_start; run boot_pci_enum; if dhcp ${scriptaddr} ${boot_script_dhcp}; then source ${scriptaddr}; fi;setenv efi_fdtfile ${fdtfile}; setenv efi_old_vci ${bootp_vci};setenv efi_old_arch ${bootp_arch};setenv bootp_vci PXEClient:Arch:00011:UNDI:003000;setenv bootp_arch 0xb;if dhcp ${kernel_addr_r}; then tftpboot ${fdt_addr_r} dtb/${efi_fdtfile};if fdt addr ${fdt_addr_r}; then bootefi ${kernel_addr_r} ${fdt_addr_r}; else bootefi ${kernel_addr_r} ${fdtcontroladdr};fi;fi;setenv bootp_vci ${efi_old_vci};setenv bootp_arch ${efi_old_arch};setenv efi_fdtfile;setenv efi_old_arch;setenv efi_old_vci;
+bootcmd_mmc0=devnum=0; run mmc_boot
+bootcmd_mmc1=devnum=1; run mmc_boot
+bootcmd_nvme0=devnum=0; run nvme_boot
+bootcmd_pxe=run boot_net_usb_start; run boot_pci_enum; dhcp; if pxe get; then pxe boot; fi
+bootcmd_sf0=busnum=0; run sf_boot
+bootcmd_usb0=devnum=0; run usb_boot
+bootdelay=2
+cpu=armv8
+cpuid#=544d463939302e3030000000000f0607
+distro_bootcmd=setenv nvme_need_init; for target in ${boot_targets}; do run bootcmd_${target}; done
+efi_dtb_prefixes=/ /dtb/ /dtb/current/
+ethaddr=76:41:8c:40:d4:75
+fdt_addr_r=0x01f00000
+fdtcontroladdr=f1ef84b0
+fdtfile=rockchip/rk3399-rock-pi-4b.dtb
+fdtoverlay_addr_r=0x02000000
+kernel_addr_r=0x02080000
+kernel_comp_addr_r=0x08000000
+kernel_comp_size=0x2000000
+load_efi_dtb=load ${devtype} ${devnum}:${distro_bootpart} ${fdt_addr_r} ${prefix}${efi_fdtfile}
+loadaddr=0x800800
+mmc_boot=if mmc dev ${devnum}; then devtype=mmc; run scan_dev_for_boot_part; fi
+nvme_boot=run boot_pci_enum; run nvme_init; if nvme dev ${devnum}; then devtype=nvme; run scan_dev_for_boot_part; fi
+nvme_init=if ${nvme_need_init}; then setenv nvme_need_init false; nvme scan; fi
+partitions=uuid_disk=${uuid_gpt_disk};name=loader1,start=32K,size=4000K,uuid=${uuid_gpt_loader1};name=loader2,start=8MB,size=4MB,uuid=${uuid_gpt_loader2};name=trust,size=4M,uuid=${uuid_gpt_atf};name=boot,size=112M,bootable,uuid=${uuid_gpt_boot};name=rootfs,size=-,uuid=B921B045-1DF0-41C3-AF44-4C6F280D3FAE;
+preboot=usb start
+pxefile_addr_r=0x00600000
+ramdisk_addr_r=0x06000000
+scan_dev_for_boot=echo Scanning ${devtype} ${devnum}:${distro_bootpart}...; for prefix in ${boot_prefixes}; do run scan_dev_for_extlinux; run scan_dev_for_scripts; done;run scan_dev_for_efi;
+scan_dev_for_boot_part=part list ${devtype} ${devnum} -bootable devplist; env exists devplist || setenv devplist 1; for distro_bootpart in ${devplist}; do if fstype ${devtype} ${devnum}:${distro_bootpart} bootfstype; then run scan_dev_for_boot; fi; done; setenv devplist
+scan_dev_for_efi=setenv efi_fdtfile ${fdtfile}; for prefix in ${efi_dtb_prefixes}; do if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${efi_fdtfile}; then run load_efi_dtb; fi;done;run boot_efi_bootmgr;if test -e ${devtype} ${devnum}:${distro_bootpart} efi/boot/bootaa64.efi; then echo Found EFI removable media binary efi/boot/bootaa64.efi; run boot_efi_binary; echo EFI LOAD FAILED: continuing...; fi; setenv efi_fdtfile
+scan_dev_for_extlinux=if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${boot_syslinux_conf}; then echo Found ${prefix}${boot_syslinux_conf}; run boot_extlinux; echo SCRIPT FAILED: continuing...; fi
+scan_dev_for_scripts=for script in ${boot_scripts}; do if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${script}; then echo Found U-Boot script ${prefix}${script}; run boot_a_script; echo SCRIPT FAILED: continuing...; fi; done
+scan_sf_for_scripts=${devtype} read ${scriptaddr} ${script_offset_f} ${script_size_f}; source ${scriptaddr}; echo SCRIPT FAILED: continuing...
+script_offset_f=0xffe000
+script_size_f=0x2000
+scriptaddr=0x00500000
+serial#=165fba2933c401fa
+sf_boot=if sf probe ${busnum}; then devtype=sf; run scan_sf_for_scripts; fi
+soc=rk3399
+stderr=serial,vidconsole
+stdin=serial,usbkbd
+stdout=serial,vidconsole
+usb_boot=usb start; if usb dev ${devnum}; then devtype=usb; run scan_dev_for_boot_part; fi
+vendor=rockchip
+
+Environment size: 4908/32764 bytes
+=> printenv -e
+Card did not respond to voltage select! : -110
+Scanning disk mmc@fe310000.blk...
+Disk mmc@fe310000.blk not ready
+Scanning disk mmc@fe320000.blk...
+Scanning disk mmc@fe330000.blk...
+Scanning disk usb_mass_storage.lun0...
+Found 10 disks
+"dfu_alt_info" env variable not defined!
+SetupMode:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    BS|RT|RO, DataSize = 0x1
+SignatureSupport:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    BS|RT|RO, DataSize = 0x40
+SecureBoot:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    BS|RT|RO, DataSize = 0x1
+certdbv:
+    d9bee56e-75dc-49d9-b4d7-b534210f637a (d9bee56e-75dc-49d9-b4d7-b534210f637a)
+    2099-09-11 17:24:20
+    BS|RT|AT|RO, DataSize = 0x4
+AuditMode:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    BS|RT|RO, DataSize = 0x1
+DeployedMode:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    BS|RT|RO, DataSize = 0x1
+VendorKeys:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    BS|RT|RO, DataSize = 0x1
+PlatformLangCodes:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    BS|RT|RO, DataSize = 0x6
+OsIndicationsSupported:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    BS|RT|RO, DataSize = 0x8
+CustomMode:
+    c076ec0c-7028-4399-a072-71ee5c448b9f (c076ec0c-7028-4399-a072-71ee5c448b9f)
+    NV|BS, DataSize = 0x1
+certdb:
+    d9bee56e-75dc-49d9-b4d7-b534210f637a (d9bee56e-75dc-49d9-b4d7-b534210f637a)
+    2099-09-11 17:24:20
+    NV|BS|RT|AT|RO, DataSize = 0x4
+VendorKeysNv:
+    9073e4e0-60ec-4b6e-9903-4c223c260f3c (9073e4e0-60ec-4b6e-9903-4c223c260f3c)
+    2099-09-11 17:24:20
+    NV|BS|AT|RO, DataSize = 0x1
+PlatformLang:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    NV|BS|RT, DataSize = 0x6
+BootOrder:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    NV|BS|RT, DataSize = 0x2
+Boot0001:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    NV|BS|RT, DataSize = 0x218
+ExitBootServicesTestVariable:
+    f6fab04f-acaf-4af3-b9fa-dcf97fb4426f (f6fab04f-acaf-4af3-b9fa-dcf97fb4426f)
+    NV|BS|RT, DataSize = 0x8
+=> bdinfo
+boot_params = 0x0000000000000000
+DRAM bank   = 0x0000000000000000
+-> start    = 0x0000000000200000
+-> size     = 0x00000000f7e00000
+flashstart  = 0x0000000000000000
+flashsize   = 0x0000000000000000
+flashoffset = 0x0000000000000000
+baudrate    = 1500000 bps
+relocaddr   = 0x00000000f3f11000
+reloc off   = 0x00000000f3d11000
+Build       = 64-bit
+current eth = ethernet@fe300000
+ethaddr     = 76:41:8c:40:d4:75
+IP addr     = <NULL>
+fdt_blob    = 0x00000000f1ef84b0
+new_fdt     = 0x00000000f1ef84b0
+fdt_size    = 0x0000000000010900
+Video       = vop@ff8f0000 inactive
+Video       = vop@ff900000 inactive
+lmb_dump_all:
+ memory.cnt  = 0x1
+ memory[0]	[0x200000-0xf7ffffff], 0xf7e00000 bytes flags: 0
+ reserved.cnt  = 0x1
+ reserved[0]	[0xf1ef4030-0xf7ffffff], 0x0610bfd0 bytes flags: 0
+devicetree  = separate
+arch_number = 0x0000000000000000
+TLB addr    = 0x00000000f7ff0000
+irq_sp      = 0x00000000f1ef84a0
+sp start    = 0x00000000f1ef84a0
+Early malloc usage: 15b8 / 4000
+=> rtc list
+RTC #0 - rtc_emul
+=> sf probe
+Invalid bus 0 (err=-19)
+Failed to initialize SPI flash at 0:0 (error -19)
+=> usb reset
+resetting USB...
+Bus usb@fe380000: USB EHCI 1.00
+Bus usb@fe3c0000: USB EHCI 1.00
+Bus usb@fe800000: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+Bus usb@fe900000: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+scanning bus usb@fe380000 for devices... 1 USB Device(s) found
+scanning bus usb@fe3c0000 for devices... 2 USB Device(s) found
+scanning bus usb@fe800000 for devices... 1 USB Device(s) found
+scanning bus usb@fe900000 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 1 Storage Device(s) found
+=> usb reset         usb info
+1: Hub,  USB Revision 2.0
+ - u-boot EHCI Host Controller 
+ - Class: Hub
+ - PacketSize: 64  Configurations: 1
+ - Vendor: 0x0000  Product 0x0000 Version 1.0
+   Configuration: 1
+   - Interfaces: 1 Self Powered 0mA
+     Interface: 0
+     - Alternate Setting 0, Endpoints: 1
+     - Class Hub
+     - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
+
+1: Hub,  USB Revision 2.0
+ - u-boot EHCI Host Controller 
+ - Class: Hub
+ - PacketSize: 64  Configurations: 1
+ - Vendor: 0x0000  Product 0x0000 Version 1.0
+   Configuration: 1
+   - Interfaces: 1 Self Powered 0mA
+     Interface: 0
+     - Alternate Setting 0, Endpoints: 1
+     - Class Hub
+     - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
+
+2: Mass Storage,  USB Revision 2.0
+ - Kingston DataTraveler G3 001CC0EC3504BBB1970D005A
+ - Class: (from Interface) Mass Storage
+ - PacketSize: 64  Configurations: 1
+ - Vendor: 0x0951  Product 0x1643 Version 1.0
+   Configuration: 1
+   - Interfaces: 1 Bus Powered 200mA
+     Interface: 0
+     - Alternate Setting 0, Endpoints: 2
+     - Class Mass Storage, Transp. SCSI, Bulk only
+     - Endpoint 1 In Bulk MaxPacket 512
+     - Endpoint 2 Out Bulk MaxPacket 512
+
+1: Hub,  USB Revision 3.0
+ - U-Boot XHCI Host Controller 
+ - Class: Hub
+ - PacketSize: 512  Configurations: 1
+ - Vendor: 0x0000  Product 0x0000 Version 1.0
+   Configuration: 1
+   - Interfaces: 1 Self Powered 0mA
+     Interface: 0
+     - Alternate Setting 0, Endpoints: 1
+     - Class Hub
+     - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
+
+1: Hub,  USB Revision 3.0
+ - U-Boot XHCI Host Controller 
+ - Class: Hub
+ - PacketSize: 512  Configurations: 1
+ - Vendor: 0x0000  Product 0x0000 Version 1.0
+   Configuration: 1
+   - Interfaces: 1 Self Powered 0mA
+     Interface: 0
+     - Alternate Setting 0, Endpoints: 1
+     - Class Hub
+     - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
+
+=> mmc rescan
+=> mmc list
+mmc@fe310000: 2
+mmc@fe320000: 1 (SD)
+mmc@fe330000: 0
+=> mmc list    info
+=> efidebug devices
+Device           Device Path
+================ ====================
+00000000f1f33290 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+00000000f1f3b2e0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+00000000f1f3b680 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,f4072f9f-c81e-409d-acd3-fe32e1366e79,0x40,0x1f40)
+00000000f1f3ba20 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,58ec2159-6b20-419a-b2f9-00c976f29535,0x1f80,0x80)
+00000000f1f3c2a0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(3,GPT,7fa5be4a-3fa9-4f9c-bcec-bfac16532e14,0x2000,0x2000)
+00000000f1f3c640 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(4,GPT,fbc0c01e-c63d-47b3-91fe-f651ffc1ffab,0x4000,0x2000)
+00000000f1f3c9e0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(5,GPT,e4d38919-3a06-47af-a23a-b00a69e68853,0x6000,0x2000)
+00000000f1f3ded0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)
+00000000f1f3e270 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x951,0x1643,0x0,0x0,0x0)
+00000000f1f3eab0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x951,0x1643,0x0,0x0,0x0)/HD(1,GPT,00112233-1234-1111-2222-000123456789,0x28,0x40000)
+00000000f1f3ee90 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x951,0x1643,0x0,0x0,0x0)/HD(2,GPT,9f328944-d3ea-4d5a-80be-19b68d517bf9,0x40028,0x400000)
+00000000f1f41f80 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(76418c40d475,1)
+=> efidebug devices      rivers
+Driver           Name                 Image Path
+================ ==================== ====================
+00000000f1f30e50 <NULL>               <built-in>
+=> efidebug drivers      h
+Handle           Protocols
+================ ====================
+00000000f1f33290 Device Path, Device Path To Text, Device Path Utilities, Device-Tree Fixup, Unicode Collation 2, HII String, HII Database, TCG2
+00000000f1f33210 Simple Text Output
+00000000f1f33310 Simple Text Input, Simple Text Input Ex
+00000000f1f3b2e0 Device Path, Block IO
+00000000f1f3b680 Device Path, Block IO
+00000000f1f3ba20 Device Path, Block IO, Simple File System
+00000000f1f3c2a0 Device Path, Block IO, Simple File System
+00000000f1f3c640 Device Path, Block IO
+00000000f1f3c9e0 Device Path, Block IO, Simple File System
+00000000f1f3ded0 Device Path, Block IO
+00000000f1f3e270 Device Path, Block IO
+00000000f1f3eab0 Device Path, Block IO, System Partition, Simple File System
+00000000f1f3ee90 Device Path, Block IO, Simple File System
+00000000f1f30e50 Driver Binding
+00000000f1f17310 Firmware Management
+00000000f1f41f80 Simple Network, Device Path, PXE Base Code
+=> efidebug dh  memmap
+Type             Start            End              Attributes
+================ ================ ================ ==========
+CONVENTIONAL     0000000000200000-00000000f0e9f000 WB
+BOOT DATA        00000000f0e9f000-00000000f0eaf000 WB
+LOADER DATA      00000000f0eaf000-00000000f0eb0000 WB
+BOOT DATA        00000000f0eb0000-00000000f0eb1000 WB
+RUNTIME DATA     00000000f0eb1000-00000000f0eb2000 WB|RT
+BOOT DATA        00000000f0eb2000-00000000f0eb5000 WB
+RUNTIME DATA     00000000f0eb5000-00000000f0eb6000 WB|RT
+BOOT DATA        00000000f0eb6000-00000000f0eb7000 WB
+ACPI NVS         00000000f0eb7000-00000000f0ec8000 WB
+BOOT DATA        00000000f0ec8000-00000000f0edb000 WB
+RUNTIME DATA     00000000f0edb000-00000000f0edd000 WB|RT
+BOOT DATA        00000000f0edd000-00000000f0ede000 WB
+RUNTIME DATA     00000000f0ede000-00000000f0ee2000 WB|RT
+BOOT DATA        00000000f0ee2000-00000000f0ef8000 WB
+LOADER DATA      00000000f0ef8000-00000000f3f10000 WB
+RUNTIME CODE     00000000f3f10000-00000000f3f20000 WB|RT
+LOADER DATA      00000000f3f20000-00000000f6000000 WB
+RESERVED         00000000f6000000-00000000f7fa4000 WB
+LOADER DATA      00000000f7fa4000-00000000f8000000 WB
+=> efidebug memmap      tables
+b122a263-3661-4f68-9929-78f8b0d62180 (EFI System Resource Table)
+1e2ed096-30e2-4254-bd89-863bbef82325 (TCG2 Final Events Table)
+eb66918a-7eef-402a-842e-931d21c38ae9 (Runtime properties)
+eb9d2d31-2d88-11d3-9a16-0090273fc14d (SMBIOS table)
+=> efidebug tables      boot dump
+Boot0001:
+attributes: A-- (0x00000001)
+  label: BootLedge
+  file_path: /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x951,0x1643,0x0,0x0,0x0)/HD(1,GPT,00112233-1234-1111-2222-000123456789,0x28,0x40000)/efi\boot\bootaa64.efi
+  initrd_path: /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x951,0x1643,0x0,0x0,0x0)/HD(1,GPT,00112233-1234-1111-2222-000123456789,0x28,0x40000)/ledge-initramfs.rootfs.cpio.gz
+  data:
+=> efidebug boot dump         capsule esrt
+========================================
+ESRT: fw_resource_count=0
+ESRT: fw_resource_count_max=0
+ESRT: fw_resource_version=1
+========================================
+=> bootefi hello ${fdtcontroladdr}
+bootefi - Boots an EFI payload from memory
+
+Usage:
+bootefi <image address> [fdt address]
+  - boot EFI payload stored at address <image address>.
+    If specified, the device tree located at <fdt address> gets
+    exposed as EFI configuration table.
+bootefi bootmgr [fdt address]
+  - load and boot EFI payload based on BootOrder/BootXXXX variables.
+
+    If specified, the device tree located at <fdt address> gets
+    exposed as EFI configuration table.
+
+=> bootefi selftest ${fdtcontroladdr}
+bootefi - Boots an EFI payload from memory
+
+Usage:
+bootefi <image address> [fdt address]
+  - boot EFI payload stored at address <image address>.
+    If specified, the device tree located at <fdt address> gets
+    exposed as EFI configuration table.
+bootefi bootmgr [fdt address]
+  - load and boot EFI payload based on BootOrder/BootXXXX variables.
+
+    If specified, the device tree located at <fdt address> gets
+    exposed as EFI configuration table.
+
+=> 
