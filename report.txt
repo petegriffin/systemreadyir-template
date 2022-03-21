@@ -1,20 +1,20 @@
 General information
 -------------------
 - Arm SystemReady Band: IR
-- System name:
-- Prepared by:
-- E-mail:
-- Date:
+- System name: RockPi 4b +
+- Prepared by: Peter Griffin
+- E-mail: peter.griffin@linaro.org
+- Date: 18 March 2022
 
 System Information
 ------------------
-- Company:
-- System:
-- SoC:
+- Company: Radxa
+- System: RockPi 4b +
+- SoC: rk3399 op1
 - FW version:
-- Memory:
-- Storage devices / disks:
-- Network controllers:
+- Memory: 4Gb RAM
+- Storage devices / disks: eMMC
+- Network controllers: 1 ethernet, 1 wifi
 - Other Hardware information:
 
 Test Logs and Results
