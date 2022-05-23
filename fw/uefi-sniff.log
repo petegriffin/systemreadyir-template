@@ -1,0 +1,491 @@
+
+U-Boot TPL 2022.04 (Apr 04 2022 - 14:31:32)
+Channel 0: LPDDR4, 50MHz
+BW=32 Col=10 Bk=8 CS0 Row=15 CS1 Row=15 CS=2 Die BW=16 Size=2048MB
+Channel 1: LPDDR4, 50MHz
+BW=32 Col=10 Bk=8 CS0 Row=15 CS1 Row=15 CS=2 Die BW=16 Size=2048MB
+256B stride
+lpddr4_set_rate: change freq to 400000000 mhz 0, 1
+lpddr4_set_rate: change freq to 800000000 mhz 1, 0
+Trying to boot from BOOTROM
+Returning to boot ROM...
+
+U-Boot SPL 2022.04 (Apr 04 2022 - 14:31:32 +0000)
+Trying to boot from MMC1
+NOTICE:  BL31: v2.6(debug):v2.6-365-ge0a6a512b5-dirty
+NOTICE:  BL31: Built : 21:59:34, Feb  3 2022
+WARNING: BL31: cortex_a53: CPU workaround for 1530924 was missing!
+I/TC: 
+I/TC: No non-secure external DT
+I/TC: OP-TEE version: 3.16.0-dev (gcc version 11.2.0 (GCC)) #1 Fri 28 Jan 2022 02:28:18 PM UTC aarch64
+I/TC: WARNING: This OP-TEE configuration might be insecure!
+I/TC: WARNING: Please check https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html
+I/TC: Primary CPU initializing
+I/TC: Primary CPU switching to normal world boot
+
+
+U-Boot 2022.04 (Apr 04 2022 - 14:31:32 +0000)
+
+SoC: Rockchip rk3399
+Reset cause: POR
+Model: Radxa ROCK Pi 4B
+DRAM:  3.9 GiB
+PMIC:  RK808 
+Core:  276 devices, 29 uclasses, devicetree: separate
+MMC:   mmc@fe310000: 2, mmc@fe320000: 1, mmc@fe330000: 0
+Loading Environment from nowhere... OK
+In:    serial
+Out:   serial
+Err:   serial
+Model: Radxa ROCK Pi 4B
+Net:   eth0: ethernet@fe300000
+starting USB...
+Bus usb@fe380000: USB EHCI 1.00
+Bus usb@fe3c0000: USB EHCI 1.00
+Bus usb@fe800000: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+Bus usb@fe900000: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+scanning bus usb@fe380000 for devices... 1 USB Device(s) found
+scanning bus usb@fe3c0000 for devices... 2 USB Device(s) found
+scanning bus usb@fe800000 for devices... 1 USB Device(s) found
+scanning bus usb@fe900000 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 1 Storage Device(s) found
+Hit any key to stop autoboot:  2  1  0 
+switch to partitions #0, OK
+mmc1 is current device
+switch to partitions #0, OK
+mmc0(part 0) is current device
+Scanning mmc 0:1...
+libfdt fdt_check_header(): FDT_ERR_BADMAGIC
+7[r[999;999H[6n8Card did not respond to voltage select! : -110
+Scanning disk mmc@fe310000.blk...
+Disk mmc@fe310000.blk not ready
+Scanning disk mmc@fe320000.blk...
+Scanning disk mmc@fe330000.blk...
+Scanning disk usb_mass_storage.lun0...
+Found 14 disks
+BootOrder not defined
+EFI boot manager: Cannot load any image
+rockchip_pcie pcie@f8000000: PCIe link training gen1 timeout!
+
+Device 0: unknown device
+
+Device 0: Vendor:  USB Rev: 1.00 Prod:  SanDisk 3.2Gen1
+            Type: Removable Hard Disk
+            Capacity: 117360.0 MB = 114.6 GB (240353280 x 512)
+... is now current device
+Scanning usb 0:1...
+libfdt fdt_check_header(): FDT_ERR_BADMAGIC
+BootOrder not defined
+EFI boot manager: Cannot load any image
+Found EFI removable media binary efi/boot/bootaa64.efi
+647168 bytes read in 29 ms (21.3 MiB/s)
+libfdt fdt_check_header(): FDT_ERR_BADMAGIC
+Booting /efi\boot\bootaa64.efi
+[0;30;47m[?25hWelcome to GRUB!
+
+[0;37;40m[0;37;40m[0;37;40mSpeed: 100, full duplex
+[?25l[0;37;40m[0;37;40m[2J[1;1H[0;37;40m[2;51HGNU GRUB  version 2.11
+
+[0;37;40m[4;2H┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐[5;2H│[5;121H│[6;2H│[6;121H│[7;2H│[7;121H│[8;2H│[8;121H│[9;2H│[9;121H│[10;2H│[10;121H│[11;2H│[11;121H│[12;2H│[12;121H│[13;2H│[13;121H│[14;2H│[14;121H│[15;2H│[15;121H│[16;2H│[16;121H│[17;2H│[17;121H│[18;2H│[18;121H│[19;2H│[19;121H│[20;2H│[20;121H│[21;2H│[21;121H│[22;2H│[22;121H│[23;2H│[23;121H│[24;2H│[24;121H│[25;2H│[25;121H│[26;2H│[26;121H│[27;2H│[27;121H│[28;2H│[28;121H│[29;2H│[29;121H│[30;2H│[30;121H│[31;2H│[31;121H│[32;2H│[32;121H│[33;2H│[33;121H│[34;2H│[34;121H│[35;2H│[35;121H│[36;2H│[36;121H│[37;2H│[37;121H│[38;2H│[38;121H│[39;2H│[39;121H│[40;2H│[40;121H│[41;2H│[41;121H│[42;2H│[42;121H│[43;2H│[43;121H│[44;2H│[44;121H│[45;2H│[45;121H│[46;2H│[46;121H│[47;2H│[47;121H│[48;2H│[48;121H│[49;2H│[49;121H│[50;2H│[50;121H│[51;2H│[51;121H│[52;2H│[52;121H│[53;2H│[53;121H│[54;2H│[54;121H│[55;2H│[55;121H│[56;2H│[56;121H│[57;2H│[57;121H│[58;2H│[58;121H│[59;2H│[59;121H│[60;2H│[60;121H│[61;2H│[61;121H│[62;2H│[62;121H│[63;2H└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘[0;37;40m[64;2H[65;2H[0;37;40m     Use the ▲ and ▼ keys to select which entry is highlighted.                                                    
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.       [5;122H [0;37;40m[5;3H Linux BusyBox                                                                                                        [0;37;40m[5;120H[0;37;40m[0;30;47m[6;3H*bbr/bsa                                                                                                              [0;37;40m[6;120H[0;37;40m[0;37;40m[7;3H                                                                                                                      [0;37;40m[7;120H[0;37;40m[0;37;40m[8;3H                                                                                                                      [0;37;40m[8;120H[0;37;40m[0;37;40m[9;3H                                                                                                                      [0;37;40m[9;120H[0;37;40m[0;37;40m[10;3H                                                                                                                      [0;37;40m[10;120H[0;37;40m[0;37;40m[11;3H                                                                                                                      [0;37;40m[11;120H[0;37;40m[0;37;40m[12;3H                                                                                                                      [0;37;40m[12;120H[0;37;40m[0;37;40m[13;3H                                                                                                                      [0;37;40m[13;120H[0;37;40m[0;37;40m[14;3H                                                                                                                      [0;37;40m[14;120H[0;37;40m[0;37;40m[15;3H                                                                                                                      [0;37;40m[15;120H[0;37;40m[0;37;40m[16;3H                                                                                                                      [0;37;40m[16;120H[0;37;40m[0;37;40m[17;3H                                                                                                                      [0;37;40m[17;120H[0;37;40m[0;37;40m[18;3H                                                                                                                      [0;37;40m[18;120H[0;37;40m[0;37;40m[19;3H                                                                                                                      [0;37;40m[19;120H[0;37;40m[0;37;40m[20;3H                                                                                                                      [0;37;40m[20;120H[0;37;40m[0;37;40m[21;3H                                                                                                                      [0;37;40m[21;120H[0;37;40m[0;37;40m[22;3H                                                                                                                      [0;37;40m[22;120H[0;37;40m[0;37;40m[23;3H                                                                                                                      [0;37;40m[23;120H[0;37;40m[0;37;40m[24;3H                                                                                                                      [0;37;40m[24;120H[0;37;40m[0;37;40m[25;3H                                                                                                                      [0;37;40m[25;120H[0;37;40m[0;37;40m[26;3H                                                                                                                      [0;37;40m[26;120H[0;37;40m[0;37;40m[27;3H                                                                                                                      [0;37;40m[27;120H[0;37;40m[0;37;40m[28;3H                                                                                                                      [0;37;40m[28;120H[0;37;40m[0;37;40m[29;3H                                                                                                                      [0;37;40m[29;120H[0;37;40m[0;37;40m[30;3H                                                                                                                      [0;37;40m[30;120H[0;37;40m[0;37;40m[31;3H                                                                                                                      [0;37;40m[31;120H[0;37;40m[0;37;40m[32;3H                                                                                                                      [0;37;40m[32;120H[0;37;40m[0;37;40m[33;3H                                                                                                                      [0;37;40m[33;120H[0;37;40m[0;37;40m[34;3H                                                                                                                      [0;37;40m[34;120H[0;37;40m[0;37;40m[35;3H                                                                                                                      [0;37;40m[35;120H[0;37;40m[0;37;40m[36;3H                                                                                                                      [0;37;40m[36;120H[0;37;40m[0;37;40m[37;3H                                                                                                                      [0;37;40m[37;120H[0;37;40m[0;37;40m[38;3H                                                                                                                      [0;37;40m[38;120H[0;37;40m[0;37;40m[39;3H                                                                                                                      [0;37;40m[39;120H[0;37;40m[0;37;40m[40;3H                                                                                                                      [0;37;40m[40;120H[0;37;40m[0;37;40m[41;3H                                                                                                                      [0;37;40m[41;120H[0;37;40m[0;37;40m[42;3H                                                                                                                      [0;37;40m[42;120H[0;37;40m[0;37;40m[43;3H                                                                                                                      [0;37;40m[43;120H[0;37;40m[0;37;40m[44;3H                                                                                                                      [0;37;40m[44;120H[0;37;40m[0;37;40m[45;3H                                                                                                                      [0;37;40m[45;120H[0;37;40m[0;37;40m[46;3H                                                                                                                      [0;37;40m[46;120H[0;37;40m[0;37;40m[47;3H                                                                                                                      [0;37;40m[47;120H[0;37;40m[0;37;40m[48;3H                                                                                                                      [0;37;40m[48;120H[0;37;40m[0;37;40m[49;3H                                                                                                                      [0;37;40m[49;120H[0;37;40m[0;37;40m[50;3H                                                                                                                      [0;37;40m[50;120H[0;37;40m[0;37;40m[51;3H                                                                                                                      [0;37;40m[51;120H[0;37;40m[0;37;40m[52;3H                                                                                                                      [0;37;40m[52;120H[0;37;40m[0;37;40m[53;3H                                                                                                                      [0;37;40m[53;120H[0;37;40m[0;37;40m[54;3H                                                                                                                      [0;37;40m[54;120H[0;37;40m[0;37;40m[55;3H                                                                                                                      [0;37;40m[55;120H[0;37;40m[0;37;40m[56;3H                                                                                                                      [0;37;40m[56;120H[0;37;40m[0;37;40m[57;3H                                                                                                                      [0;37;40m[57;120H[0;37;40m[0;37;40m[58;3H                                                                                                                      [0;37;40m[58;120H[0;37;40m[0;37;40m[59;3H                                                                                                                      [0;37;40m[59;120H[0;37;40m[0;37;40m[60;3H                                                                                                                      [0;37;40m[60;120H[0;37;40m[0;37;40m[61;3H                                                                                                                      [0;37;40m[61;120H[0;37;40m[0;37;40m[62;3H                                                                                                                      [0;37;40m[62;120H[0;37;40m[62;122H [6;120H[67;1H   The highlighted entry will be executed automatically in 5s.                                                           [6;120H[67;1H   The highlighted entry will be executed automatically in 4s.                                                           [6;120H[67;1H   The highlighted entry will be executed automatically in 3s.                                                           [6;120H[67;1H   The highlighted entry will be executed automatically in 2s.                                                           [6;120H[67;1H   The highlighted entry will be executed automatically in 1s.                                                           [6;120H[67;1H   The highlighted entry will be executed automatically in 0s.                                                           [6;120H[?25h[0;37;40m[2J[1;1H[0;37;40m
+  Booting `bbr/bsa'
+
+/EndEntire
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/USBClass(0,0,9,0,1)/USBClass(781,5591,0,0,0)
+/HD(1,800,fffff,7058281368608841,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
+[2J[1;1H[?25h[1;1HUEFI Interactive Shell v2.2
+[0;37;40mEDK II
+[0;37;40mUEFI v2.90 (Das U-Boot, 0x20220400)
+[0;37;40m[1;33;40mMapping table[0;37;40m
+[0;37;40m[1;33;40m      FS2:[0;37;40m [1;37;40mAlias(s):[0;37;40mHD0c:;BLK7:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,66744a8d-6f62-40c8-86d6-e5fad7ecd814,0x1f80,0x80)
+[0;37;40m[1;33;40m      FS3:[0;37;40m [1;37;40mAlias(s):[0;37;40mHD0d:;BLK8:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(3,GPT,c5a9eb0e-5295-4879-957b-a3a06a0be67f,0x2000,0x2000)
+[0;37;40m[1;33;40m      FS4:[0;37;40m [1;37;40mAlias(s):[0;37;40mHD0f:;BLK10:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(5,GPT,c9e27044-b38d-43bd-98a7-1f2122a718b0,0x6000,0x2000)
+[0;37;40m[1;33;40m      FS0:[0;37;40m [1;37;40mAlias(s):[0;37;40mHD0b:;BLK1:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(1,GPT,37966541-4c75-44c1-bf46-b3e6005cb622,0x800,0x219800)
+[0;37;40m[1;33;40m      FS1:[0;37;40m [1;37;40mAlias(s):[0;37;40mHD0c:;BLK2:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(2,GPT,baabac49-11e5-4d32-ae12-f960ec0a01c6,0x21a000,0x300000)
+[0;37;40m[1;33;40m      FS5:[0;37;40m [1;37;40mAlias(s):[0;37;40mHD0b:;BLK12:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)/HD(1,GPT,13285870-6068-4188-a380-fdc2f33d2267,0x800,0xfffff)
+[0;37;40m[1;33;40m      FS6:[0;37;40m [1;37;40mAlias(s):[0;37;40mHD0c:;BLK13:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)/HD(2,GPT,928376d7-35ab-4d5a-9f36-64dfae9844c2,0x100800,0x18fff)
+[0;37;40m[1;33;40m     BLK5:[0;37;40m [1;37;40mAlias(s):[0;37;40m
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+[0;37;40m[1;33;40m     BLK6:[0;37;40m [1;37;40mAlias(s):[0;37;40m
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,9462aaff-b509-469d-861a-c11f84e864ba,0x40,0x1f40)
+[0;37;40m[1;33;40m     BLK9:[0;37;40m [1;37;40mAlias(s):[0;37;40m
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(4,GPT,847bfef9-6016-4111-9fe4-77501cfab6e6,0x4000,0x2000)
+[0;37;40m[1;33;40m     BLK0:[0;37;40m [1;37;40mAlias(s):[0;37;40m
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)
+[0;37;40m[1;33;40m     BLK3:[0;37;40m [1;37;40mAlias(s):[0;37;40m
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(3,GPT,00243341-a736-43fe-ac34-1b8f7967d0a4,0x51a000,0x6a21800)
+[0;37;40m[1;33;40m     BLK4:[0;37;40m [1;37;40mAlias(s):[0;37;40m
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(4,GPT,0ece9666-5d2e-443d-8189-f3a3720011c9,0x6f3b800,0x4007df)
+[0;37;40m[1;33;40m    BLK11:[0;37;40m [1;37;40mAlias(s):[0;37;40m
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)
+[0;37;40mNo SimpleTextInputEx was found. CTRL-based features are not usable.
+[0;37;40mNo SimpleTextInputEx was found. CTRL-based features are not usable.
+[0;37;40m[?25l[46;1H[0;37;40mPress [1;37;40mESC[0;37;40m in 5 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[0;37;40m[46;1H[0;37;40mPress [1;37;40mESC[0;37;40m in 4 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[0;37;40m[46;1H[0;37;40mPress [1;37;40mESC[0;37;40m in 3 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[0;37;40m
+[0;37;40m[?25h[47;1H[1;33;40mShell> [0;37;40m[0;37;40m[47;8Hc[0;37;40m[47;9H[47;9Hd[0;37;40m[47;10H[47;10H [0;37;40m[47;11H[47;11H.[0;37;40m[47;12H[47;12H.[0;37;40m[47;13H[47;13H[0;37;40m
+[0;37;40m[1;37;40mcd[0;37;40m: Current directory not specified.
+[0;37;40m[49;1H[1;33;40mShell> [0;37;40m[0;37;40m[49;8Hp[0;37;40m[49;9H[49;9Hc[0;37;40m[49;10H[49;10Hi[0;37;40m[49;11H[49;11H[0;37;40m
+[0;37;40m[1;37;40mpci[0;37;40m: Protocol - PciRootBridgeIo not found.
+[0;37;40m[51;1H[1;33;40mShell> [0;37;40m[0;37;40m[51;8Hd[0;37;40m[51;9H[51;9Hr[0;37;40m[51;10H[51;10Hi[0;37;40m[51;11H[51;11Hv[0;37;40m[51;12H[51;12He[0;37;40m[51;13H[51;13Hr[0;37;40m[51;14H[51;14Hs[0;37;40m[51;15H[51;15H[0;37;40m
+[0;37;40m[0;37;40m[1;37;40m            T   D[0;37;40m
+[1;37;40mD           Y C I[0;37;40m
+[1;37;40mR           P F A[0;37;40m
+[1;37;40mV  VERSION  E G G #D #C DRIVER NAME                         IMAGE NAME[0;37;40m
+== ======== = = = == == =================================== ==========
+[0;37;40m[1;37;40m11[0;37;40m FFFFFFFF ? - -  -  - <null string>                       
+[0;37;40m[58;1H[1;33;40mShell> [0;37;40m[0;37;40m[58;8Hd[0;37;40m[58;9H[58;9He[0;37;40m[58;10H[58;10Hv[0;37;40m[58;11H[58;11Hi[0;37;40m[58;12H[58;12Hc[0;37;40m[58;13H[58;13He[0;37;40m[58;14H[58;14Hs[0;37;40m[58;15H[58;15H[0;37;40m
+[0;37;40m[0;37;40m     T   D
+     Y C I
+     P F A
+CTRL E G G #P #D #C  Device Name
+==== = = = == == === =========================================================
+[0;37;40m[64;1H[1;33;40mShell> [0;37;40m[0;37;40m[64;8Hd[0;37;40m[64;9H[64;9He[0;37;40m[64;10H[64;10Hv[0;37;40m[64;11H[64;11Ht[0;37;40m[64;12H[64;12Hr[0;37;40m[64;13H[64;13He[0;37;40m[64;14H[64;14He[0;37;40m[64;15H[64;15H[0;37;40m
+[0;37;40m Ctrl[[1;37;40m01[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+[0;37;40m Ctrl[[1;37;40m02[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
+[0;37;40m Ctrl[[1;37;40m03[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+[0;37;40m Ctrl[[1;37;40m04[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,9462aaff-b509-469d-861a-c11f84e864ba,0x40,0x1f40)
+[0;37;40m Ctrl[[1;37;40m05[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,66744a8d-6f62-40c8-86d6-e5fad7ecd814,0x1f80,0x80)
+[0;37;40m Ctrl[[1;37;40m06[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(3,GPT,c5a9eb0e-5295-4879-957b-a3a06a0be67f,0x2000,0x2000)
+[0;37;40m Ctrl[[1;37;40m07[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(4,GPT,847bfef9-6016-4111-9fe4-77501cfab6e6,0x4000,0x2000)
+[0;37;40m Ctrl[[1;37;40m08[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(5,GPT,c9e27044-b38d-43bd-98a7-1f2122a718b0,0x6000,0x2000)
+[0;37;40m Ctrl[[1;37;40m09[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)
+[0;37;40m Ctrl[[1;37;40m0A[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(1,GPT,37966541-4c75-44c1-bf46-b3e6005cb622,0x800,0x219800)
+[0;37;40m Ctrl[[1;37;40m0B[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(2,GPT,baabac49-11e5-4d32-ae12-f960ec0a01c6,0x21a000,0x300000)
+[0;37;40m Ctrl[[1;37;40m0C[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(3,GPT,00243341-a736-43fe-ac34-1b8f7967d0a4,0x51a000,0x6a21800)
+[0;37;40m Ctrl[[1;37;40m0D[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(4,GPT,0ece9666-5d2e-443d-8189-f3a3720011c9,0x6f3b800,0x4007df)
+[0;37;40m Ctrl[[1;37;40m0E[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)
+[0;37;40m Ctrl[[1;37;40m0F[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)/HD(1,GPT,13285870-6068-4188-a380-fdc2f33d2267,0x800,0xfffff)
+[0;37;40m Ctrl[[1;37;40m10[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)/HD(2,GPT,928376d7-35ab-4d5a-9f36-64dfae9844c2,0x100800,0x18fff)
+[0;37;40m Ctrl[[1;37;40m13[0;37;40m] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(76418c40d475,1)
+[0;37;40m[69;1H[1;33;40mShell> [0;37;40m[0;37;40m[69;8Hd[0;37;40m[69;9H[69;9Hm[0;37;40m[69;10H[69;10Hp[0;37;40m[69;11H[69;11Hs[0;37;40m[69;12H[69;12Ht[0;37;40m[69;13H[69;13Ho[0;37;40m[69;14H[69;14Hr[0;37;40m[69;15H[69;15He[0;37;40m[69;16H[69;16H[0;37;40m
+[0;37;40mVariable [1;37;40mNV+RT+BS[0;37;40m '[1;37;40mEFIGlobalVariable[0;37;40m:[1;37;40mPlatformLang[0;37;40m' DataSize = 0x06
+[0;37;40m  00000000: 65 6E 2D 55 53 00                                *en-US.*
+[0;37;40mVariable [1;37;40mRT+BS[0;37;40m '[1;37;40mEFIGlobalVariable[0;37;40m:[1;37;40mSignatureSupport[0;37;40m' DataSize = 0x20
+[0;37;40m  00000000: 26 16 C4 C1 4C 50 92 40-AC A9 41 F9 36 93 43 28  *&...LP.@..A.6.C(*
+[0;37;40m  00000010: A1 59 C0 A5 E4 94 A7 4A-87 B5 AB 15 5C 2B F0 72  *.Y.....J....\+.r*
+[0;37;40mVariable [1;37;40mRT+BS[0;37;40m '[1;37;40mEFIGlobalVariable[0;37;40m:[1;37;40mOsIndicationsSupported[0;37;40m' DataSize = 0x08
+[0;37;40m  00000000: 1C 00 00 00 00 00 00 00-                         *........*
+[0;37;40mVariable [1;37;40mRT+BS[0;37;40m '[1;37;40mEFIGlobalVariable[0;37;40m:[1;37;40mPlatformLangCodes[0;37;40m' DataSize = 0x06
+[0;37;40m  00000000: 65 6E 2D 55 53 00                                *en-US.*
+[0;37;40mVariable [1;37;40mRT+BS[0;37;40m '[1;37;40mEFIGlobalVariable[0;37;40m:[1;37;40mVendorKeys[0;37;40m' DataSize = 0x01
+[0;37;40m  00000000: 00                                               *.*
+[0;37;40mVariable [1;37;40mRT+BS[0;37;40m '[1;37;40mEFIGlobalVariable[0;37;40m:[1;37;40mDeployedMode[0;37;40m' DataSize = 0x01
+[0;37;40m  00000000: 00                                               *.*
+[0;37;40mVariable [1;37;40mRT+BS[0;37;40m '[1;37;40mEFIGlobalVariable[0;37;40m:[1;37;40mAuditMode[0;37;40m' DataSize = 0x01
+[0;37;40m  00000000: 00                                               *.*
+[0;37;40mVariable [1;37;40mRT+BS[0;37;40m '[1;37;40mEFIGlobalVariable[0;37;40m:[1;37;40mSecureBoot[0;37;40m' DataSize = 0x01
+[0;37;40m  00000000: 00                                               *.*
+[0;37;40mVariable [1;37;40mRT+BS[0;37;40m '[1;37;40mEFIGlobalVariable[0;37;40m:[1;37;40mSetupMode[0;37;40m' DataSize = 0x01
+[0;37;40m  00000000: 01                                               *.*
+[0;37;40m[69;1H[1;33;40mShell> [0;37;40m[0;37;40m[69;8Hd[0;37;40m[69;9H[69;9Hh[0;37;40m[69;10H[69;10H [0;37;40m[69;11H[69;11H-[0;37;40m[69;12H[69;12Hd[0;37;40m[69;13H[69;13H [0;37;40m[69;14H[69;14H-[0;37;40m[69;15H[69;15Hv[0;37;40m[69;16H[69;16H[0;37;40m
+[0;37;40mHandle dump
+[0;37;40m[1;37;40m01[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF1F39BC0[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b) [1;37;40mDevicePathToText[0;37;40m([1;37;40mF3FB1728[0;37;40m) [1;37;40mDevicePathUtilities[0;37;40m([1;37;40mF3FB1738[0;37;40m) [1;37;40mE617D64C-FE08-46DA-F4DC-BBD5870C7300[0;37;40m([1;37;40mF3FDA520[0;37;40m) [1;37;40mUnicodeCollation2[0;37;40m([1;37;40mF3FB1CE8[0;37;40m) [1;37;40mHIIString[0;37;40m([1;37;40mF3FB1AB8[0;37;40m) [1;37;40mHIIDatabase[0;37;40m([1;37;40mF3FB1A60[0;37;40m) [1;37;40mSimpleTextOut[0;37;40m([1;37;40mF3FDA488[0;37;40m)   Address: [1;37;40mF3FDA488[0;37;40m Attrib 07
+     mode 0: Col 80 Row 25
+     mode 1: Col 80 Row 50
+  *  mode 2: Col 122 Row 69 [1;37;40mSimpleTextIn[0;37;40m([1;37;40mF3FDA428[0;37;40m) [1;37;40mSimpleTextInEx[0;37;40m([1;37;40mF3FDA440[0;37;40m) [1;37;40mTcg2[0;37;40m([1;37;40mF3FB1CB0[0;37;40m) 
+[0;37;40m[1;37;40m02[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EF0040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D) 
+[0;37;40m[1;37;40m03[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EED040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F39EF8[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock EE2AFFF (127,865,454,592), raw rw !cached 
+[0;37;40m[1;37;40m04[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EEA040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,9462aaff-b509-469d-861a-c11f84e864ba,0x40,0x1f40) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3A048[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 1F3F (4,096,000), partition rw !cached 
+[0;37;40m[1;37;40m05[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EE8040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,66744a8d-6f62-40c8-86d6-e5fad7ecd814,0x1f80,0x80) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3A198[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 7F (65,536), partition rw !cached [1;37;40mSimpleFileSystem[0;37;40m([1;37;40mF1F3A510[0;37;40m) 
+[0;37;40m[1;37;40m06[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EE6040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(3,GPT,c5a9eb0e-5295-4879-957b-a3a06a0be67f,0x2000,0x2000) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3A5A8[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 1FFF (4,194,304), partition rw !cached [1;37;40mSimpleFileSystem[0;37;40m([1;37;40mF1F3A920[0;37;40m) 
+[0;37;40m[1;37;40m07[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EE4040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(4,GPT,847bfef9-6016-4111-9fe4-77501cfab6e6,0x4000,0x2000) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3A9B8[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 1FFF (4,194,304), partition rw !cached 
+[0;37;40m[1;37;40m08[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EE2040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(5,GPT,c9e27044-b38d-43bd-98a7-1f2122a718b0,0x6000,0x2000) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3B608[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 1FFF (4,194,304), partition rw !cached [1;37;40mSimpleFileSystem[0;37;40m([1;37;40mF1F3B980[0;37;40m) 
+[0;37;40m[1;37;40m09[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EE1040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3BA18[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 733BFFF (61,865,984,000), raw rw !cached 
+[0;37;40m[1;37;40m0A[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EDE040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(1,GPT,37966541-4c75-44c1-bf46-b3e6005cb622,0x800,0x219800) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3BB68[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 2197FF (1,127,219,200), partition rw !cached [1;37;40mEFISystemPartition[0;37;40m([1;37;40m0[0;37;40m) [1;37;40mSimpleFileSystem[0;37;40m([1;37;40mF1F3BCD0[0;37;40m) 
+[0;37;40m[1;37;40m0B[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EDC040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(2,GPT,baabac49-11e5-4d32-ae12-f960ec0a01c6,0x21a000,0x300000) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3BD68[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 2FFFFF (1,610,612,736), partition rw !cached [1;37;40mSimpleFileSystem[0;37;40m([1;37;40mF1F3CE70[0;37;40m) 
+[0;37;40m[1;37;40m0C[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0EDA040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(3,GPT,00243341-a736-43fe-ac34-1b8f7967d0a4,0x51a000,0x6a21800) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3CF08[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 6A217FF (56,978,571,264), partition rw !cached 
+[0;37;40m[1;37;40m0D[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0ED8040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(2)/HD(4,GPT,0ece9666-5d2e-443d-8189-f3a3720011c9,0x6f3b800,0x4007df) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3DB08[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 4007DE (2,148,515,328), partition rw !cached 
+[0;37;40m[1;37;40m0E[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0ED7040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3E548[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock E537FFF (123,060,879,360), raw rw !cached 
+[0;37;40m[1;37;40m0F[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0ED4040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)/HD(1,GPT,13285870-6068-4188-a380-fdc2f33d2267,0x800,0xfffff) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3E8E8[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock FFFFE (536,870,400), partition rw !cached [1;37;40mSimpleFileSystem[0;37;40m([1;37;40mF1F3EC60[0;37;40m) 
+[0;37;40m[1;37;40m10[0;37;40m: [1;37;40mDevicePath[0;37;40m([1;37;40mF0ED2040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)/HD(2,GPT,928376d7-35ab-4d5a-9f36-64dfae9844c2,0x100800,0x18fff) [1;37;40mBlockIO[0;37;40m([1;37;40mF1F3ECF8[0;37;40m)   Removable MId:[1;37;40m1[0;37;40m bsize [1;37;40m200[0;37;40m, lblock 18FFE (52,428,288), partition rw !cached [1;37;40mSimpleFileSystem[0;37;40m([1;37;40mF1F3F070[0;37;40m) 
+[0;37;40m[1;37;40m11[0;37;40m: [1;37;40mDriverBinding[0;37;40m([1;37;40mF1F3E290[0;37;40m) 
+[0;37;40m   Driver Name [[1;37;40m11[0;37;40m]   : [1;37;40m<Unknown>[0;37;40m
+[0;37;40m   Driver Image Name  : [1;37;40m<Unknown>[0;37;40m
+[0;37;40m   Driver Version     : [1;37;40mFFFFFFFF[0;37;40m
+   Driver Type        : [1;37;40m<Unknown>[0;37;40m
+   Configuration      : [1;37;40mNO[0;37;40m
+   Diagnostics        : [1;37;40mNO[0;37;40m
+[0;37;40m   Managing           : [1;37;40mNone[0;37;40m
+[0;37;40m[1;37;40m12[0;37;40m: [1;37;40mFirmwareManagement[0;37;40m([1;37;40mF3FB1830[0;37;40m) 
+[0;37;40m[1;37;40m13[0;37;40m: [1;37;40mSimpleNetwork[0;37;40m([1;37;40mF1F41338[0;37;40m) [1;37;40mDevicePath[0;37;40m([1;37;40mF0ECA040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(76418c40d475,1) [1;37;40mPXEBaseCode[0;37;40m([1;37;40mF1F41650[0;37;40m) 
+[0;37;40m[1;37;40m14[0;37;40m: [1;37;40mImageDevicePath[0;37;40m([1;37;40mF0E99040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)/HD(1,GPT,13285870-6068-4188-a380-fdc2f33d2267,0x800,0xfffff)/efi\boot\bootaa64.efi [1;37;40mLoadedImage[0;37;40m([1;37;40mF1F565C0[0;37;40m)   Revision......: [1;37;40m0x00001000[0;37;40m
+  ParentHandle..: [1;37;40mF1F39BE0[0;37;40m
+  SystemTable...: [1;37;40mF3F0AC28[0;37;40m
+  DeviceHandle..: [1;37;40mF1F3E8C0[0;37;40m
+  FilePath......: [1;37;40m/efi\boot\bootaa64.efi[0;37;40m
+  PdbFileName...: [1;37;40m<null string>[0;37;40m
+  OptionsSize...: [1;37;40m0[0;37;40m
+  LoadOptions...: [1;37;40m0[0;37;40m
+  ImageBase.....: [1;37;40mF0DFB000[0;37;40m
+  ImageSize.....: [1;37;40m9E000[0;37;40m
+  CodeType......: [1;37;40mEfiLoaderCode[0;37;40m
+  DataType......: [1;37;40mEfiLoaderData[0;37;40m
+  Unload........: [1;37;40m0[0;37;40m 
+[0;37;40m[1;37;40m15[0;37;40m: [1;37;40mImageDevicePath[0;37;40m([1;37;40mF0DF7040[0;37;40m)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/UsbClass(0x0,0x0,0x9,0x0,0x1)/UsbClass(0x781,0x5591,0x0,0x0,0x0)/HD(1,GPT,13285870-6068-4188-a380-fdc2f33d2267,0x800,0xfffff)/\EFI\BOOT/Shell.efi [1;37;40mLoadedImage[0;37;40m([1;37;40mF1F398C0[0;37;40m)   Revision......: [1;37;40m0x00001000[0;37;40m
+  ParentHandle..: [1;37;40mF1F56630[0;37;40m
+  SystemTable...: [1;37;40mF3F0AC28[0;37;40m
+  DeviceHandle..: [1;37;40mF1F3E8C0[0;37;40m
+  FilePath......: [1;37;40m/\EFI\BOOT/Shell.efi[0;37;40m
+  PdbFileName...: [1;37;40m<null string>[0;37;40m
+  OptionsSize...: [1;37;40m0[0;37;40m
+  LoadOptions...: [1;37;40m0[0;37;40m
+  ImageBase.....: [1;37;40mB521E000[0;37;40m
+  ImageSize.....: [1;37;40mF1000[0;37;40m
+  CodeType......: [1;37;40mEfiLoaderCode[0;37;40m
+  DataType......: [1;37;40mEfiLoaderData[0;37;40m
+  Unload........: [1;37;40m0[0;37;40m [1;37;40mSimpleTextOut[0;37;40m([1;37;40mB517F048[0;37;40m)   Address: [1;37;40mB517F048[0;37;40m Attrib 07
+     mode 0: Col 80 Row 25
+     mode 1: Col 80 Row 50
+  *  mode 2: Col 122 Row 69 [1;37;40mShellParameters[0;37;40m([1;37;40mB5150040[0;37;40m) [1;37;40mShell[0;37;40m([1;37;40mB52FA110[0;37;40m) 
+[0;37;40m[69;1H[1;33;40mShell> [0;37;40m[0;37;40m[69;8Hm[0;37;40m[69;9H[69;9He[0;37;40m[69;10H[69;10Hm[0;37;40m[69;11H[69;11Hm[0;37;40m[69;12H[69;12Ha[0;37;40m[69;13H[69;13Hp[0;37;40m[69;14H[69;14H[0;37;40m
+[0;37;40mType       Start            End              # Pages          Attributes
+[0;37;40mAvailable  0000000000200000-00000000080EBFFF 0000000000007EEC 0000000000000008
+[0;37;40mACPI_Recl  00000000080EC000-0000000008113FFF 0000000000000028 0000000000000008
+[0;37;40mAvailable  0000000008114000-000000002FFFFFFF 0000000000027EEC 0000000000000008
+[0;37;40mReserved   0000000030000000-00000000323FFFFF 0000000000002400 0000000000000008
+[0;37;40mAvailable  0000000032400000-00000000B509DFFF 0000000000082C9E 0000000000000008
+[0;37;40mBS_Data    00000000B509E000-00000000B521DFFF 0000000000000180 0000000000000008
+[0;37;40mLoaderCode 00000000B521E000-00000000B53FFFFF 00000000000001E2 0000000000000008
+[0;37;40mLoaderData 00000000B5400000-00000000B5400FFF 0000000000000001 0000000000000008
+[0;37;40mLoaderCode 00000000B5401000-00000000F0DF2FFF 000000000003B9F2 0000000000000008
+[0;37;40mBS_Data    00000000F0DF3000-00000000F0DFAFFF 0000000000000008 0000000000000008
+[0;37;40mLoaderCode 00000000F0DFB000-00000000F0E98FFF 000000000000009E 0000000000000008
+[0;37;40mBS_Data    00000000F0E99000-00000000F0EA0FFF 0000000000000008 0000000000000008
+[0;37;40mRT_Data    00000000F0EA1000-00000000F0EA1FFF 0000000000000001 8000000000000008
+[0;37;40mBS_Data    00000000F0EA2000-00000000F0EA4FFF 0000000000000003 0000000000000008
+[0;37;40mRT_Data    00000000F0EA5000-00000000F0EA5FFF 0000000000000001 8000000000000008
+[0;37;40mBS_Data    00000000F0EA6000-00000000F0EA6FFF 0000000000000001 0000000000000008
+[0;37;40mACPI_NVS   00000000F0EA7000-00000000F0EB7FFF 0000000000000011 0000000000000008
+[0;37;40mBS_Data    00000000F0EB8000-00000000F0ECAFFF 0000000000000013 0000000000000008
+[0;37;40mRT_Data    00000000F0ECB000-00000000F0ECCFFF 0000000000000002 8000000000000008
+[0;37;40mBS_Data    00000000F0ECD000-00000000F0ECDFFF 0000000000000001 0000000000000008
+[0;37;40mRT_Data    00000000F0ECE000-00000000F0ED1FFF 0000000000000004 8000000000000008
+[0;37;40mBS_Data    00000000F0ED2000-00000000F0EF0FFF 000000000000001F 0000000000000008
+[0;37;40mLoaderData 00000000F0EF1000-00000000F3EFFFFF 000000000000300F 0000000000000008
+[0;37;40mRT_Code    00000000F3F00000-00000000F3F0FFFF 0000000000000010 8000000000000008
+[0;37;40mLoaderData 00000000F3F10000-00000000F5FFFFFF 00000000000020F0 0000000000000008
+[0;37;40mReserved   00000000F6000000-00000000F7FA3FFF 0000000000001FA4 0000000000000008
+[0;37;40mLoaderData 00000000F7FA4000-00000000F7FFFFFF 000000000000005C 0000000000000008
+[0;37;40m 
+  Reserved  :         17,316 Pages (70,926,336 Bytes)
+  LoaderCode:        244,850 Pages (1,002,905,600 Bytes)
+  LoaderData:         20,828 Pages (85,311,488 Bytes)
+  BS_Code   :              0 Pages (0 Bytes)
+  BS_Data   :            455 Pages (1,863,680 Bytes)
+  RT_Code   :             16 Pages (65,536 Bytes)
+  RT_Data   :              8 Pages (32,768 Bytes)
+  ACPI_Recl :             40 Pages (163,840 Bytes)
+  ACPI_NVS  :             17 Pages (69,632 Bytes)
+  MMIO      :              0 Pages (0 Bytes)
+  MMIO_Port :              0 Pages (0 Bytes)
+  PalCode   :              0 Pages (0 Bytes)
+  Available :        731,766 Pages (2,997,313,536 Bytes)
+  Persistent:              0 Pages (0 Bytes)
+[0;37;40m              -------------- 
+Total Memory:          3,898 MB (4,087,726,080 Bytes)
+[0;37;40m[69;1H[1;33;40mShell> [0;37;40m[0;37;40m[69;8Hs[0;37;40m[69;9H[69;9Hm[0;37;40m[69;10H[69;10Hb[0;37;40m[69;11H[69;11Hi[0;37;40m[69;12H[69;12Ho[0;37;40m[69;13H[69;13Hs[0;37;40m[69;14H[69;14Hv[0;37;40m[69;15H[69;15Hi[0;37;40m[69;16H[69;16He[0;37;40m[69;17H[69;17Hw[0;37;40m[69;18H[69;18H[0;37;40m
+[0;37;40m[1;37;40mSMBIOS Entry Point Structure:[0;37;40m
+[0;37;40mAnchor String:        _SM_
+[0;37;40mEPS Checksum:         0x3B
+[0;37;40mEntry Point Len:      31
+[0;37;40mVersion:              3.0
+[0;37;40mNumber of Structures: 7
+[0;37;40mMax Struct size:      69
+[0;37;40mTable Address:        0xF0EA1020
+[0;37;40mTable Length:         265
+[0;37;40mEntry Point revision: 0x0
+[0;37;40mSMBIOS BCD Revision:  0x0
+[0;37;40mInter Anchor:         _DMI_
+[0;37;40mInter Checksum:       0x4D
+[0;37;40mFormatted Area:  
+[0;37;40m  00000000: 00 00 00 00 00                                   *.....*
+[0;37;40m
+=========================================================
+[0;37;40mQuery Structure, conditions are:
+[0;37;40mQueryType   = Random 
+[0;37;40mQueryHandle = Random
+[0;37;40mShowType    = [0;37;40mSHOW_DETAIL[0;37;40m
+
+[0;37;40m
+=========================================================
+[0;37;40mType=0, Handle=0x0
+Dump Structure as:
+[0;37;40mIndex=0,Length=0x33,[0;37;40mAddr=0xF0EA1020
+[0;37;40m00000000: 00 18 00 00 01 02 00 00-03 00 80 08 01 00 00 00  *................*
+[0;37;40m00000010: 00 00 00 0C 16 04 FF FF-55 2D 42 6F 6F 74 00 32  *........U-Boot.2*
+[0;37;40m00000020: 30 32 32 2E 30 34 00 30-34 2F 30 31 2F 32 30 32  *022.04.04/01/202*
+[0;37;40m00000030: 32 00 00                                         *2..*
+[0;37;40mStructure Type:[0;37;40m BIOS Information
+Format part Len : 24
+[0;37;40mStructure Handle: 0
+[0;37;40mVendor[0;37;40m: U-Boot
+[0;37;40mBiosVersion[0;37;40m: 2022.04
+[0;37;40mBiosSegment[0;37;40m: 0x0
+[0;37;40mBiosReleaseDate[0;37;40m: 04/01/2022
+[0;37;40mBiosSize:  64 KB
+[0;37;40mBIOS Characteristics: 
+[0;37;40mPCI is supported
+[0;37;40mBIOS is Upgradeable(FLASH)
+[0;37;40mSelectable Boot is supported
+[0;37;40m Bits 32:47 are reserved for BIOS Vendor
+[0;37;40m Bits 48:64 are reserved for System Vendor
+[0;37;40mBIOS Characteristics Extension Byte1:
+[0;37;40mBIOS Characteristics Extension Byte2:
+[0;37;40mEnable Targeted Content Distribution
+[0;37;40mUEFI Specification is supported
+[0;37;40m Bits 5:7 are reserved for future assignment
+[0;37;40mSystemBiosMajorRelease[0;37;40m: 22
+[0;37;40mSystemBiosMinorRelease[0;37;40m: 4
+[0;37;40mEmbeddedControllerFirmwareMajorRelease[0;37;40m: 255
+[0;37;40mEmbeddedControllerFirmwareMinorRelease[0;37;40m: 255
+[0;37;40m
+[0;37;40m
+=========================================================
+[0;37;40mType=1, Handle=0x1
+Dump Structure as:
+[0;37;40mIndex=1,Length=0x45,[0;37;40mAddr=0xF0EA1053
+[0;37;40m00000000: 01 1B 01 00 01 02 00 03-31 36 35 66 62 61 32 39  *........165fba29*
+[0;37;40m00000010: 33 33 63 34 30 31 66 61-00 00 00 55 6E 6B 6E 6F  *33c401fa...Unkno*
+[0;37;40m00000020: 77 6E 00 55 6E 6B 6E 6F-77 6E 20 50 72 6F 64 75  *wn.Unknown Produ*
+[0;37;40m00000030: 63 74 00 31 36 35 66 62-61 32 39 33 33 63 34 30  *ct.165fba2933c40*
+[0;37;40m00000040: 31 66 61 00 00                                   *1fa..*
+[0;37;40mStructure Type:[0;37;40m System Information
+Format part Len : 27
+[0;37;40mStructure Handle: 1
+[0;37;40mManufacturer[0;37;40m: Unknown
+[0;37;40mProductName[0;37;40m: Unknown Product
+[0;37;40mVersion[0;37;40m: 
+[0;37;40mSerialNumber[0;37;40m: 165fba2933c401fa
+[0;37;40mDump [0;37;40mUuid[0;37;40m
+size=16:
+[0;37;40m00000000: 31 36 35 66 62 61 32 39-33 33 63 34 30 31 66 61  *165fba2933c401fa*
+[0;37;40mSystem Wakeup Type:[0;37;40m Reserved
+SKUNumber[0;37;40m: 
+[0;37;40mFamily[0;37;40m: 
+[0;37;40m
+[0;37;40m
+=========================================================
+[0;37;40mType=2, Handle=0x2
+Dump Structure as:
+[0;37;40mIndex=2,Length=0x27,[0;37;40mAddr=0xF0EA1098
+[0;37;40m00000000: 02 0E 02 00 01 02 00 00-00 01 00 00 00 0A 55 6E  *..............Un*
+[0;37;40m00000010: 6B 6E 6F 77 6E 00 55 6E-6B 6E 6F 77 6E 20 50 72  *known.Unknown Pr*
+[0;37;40m00000020: 6F 64 75 63 74 00 00                             *oduct..*
+[0;37;40mStructure Type:[0;37;40m Base Board Information
+Format part Len : 14
+[0;37;40mStructure Handle: 2
+[0;37;40mManufacturer[0;37;40m: Unknown
+[0;37;40mProductName[0;37;40m: Unknown Product
+[0;37;40mVersion[0;37;40m: 
+[0;37;40mSerialNumber[0;37;40m: 
+[0;37;40mAssetTag[0;37;40m: 
+[0;37;40mBase Board Feature Flags:[0;37;40m Hosting board
+LocationInChassis[0;37;40m: 
+[0;37;40mChassisHandle[0;37;40m: 0x0
+[0;37;40mBase Board Board Type:[0;37;40m Motherboard
+
+[0;37;40m
+=========================================================
+[0;37;40mType=3, Handle=0x3
+Dump Structure as:
+[0;37;40mIndex=3,Length=0x1E,[0;37;40mAddr=0xF0EA10BF
+[0;37;40m00000000: 03 15 03 00 01 03 00 00-00 03 03 03 03 00 00 00  *................*
+[0;37;40m00000010: 00 00 00 00 00 55 6E 6B-6E 6F 77 6E 00 00        *.....Unknown..*
+[0;37;40mStructure Type:[0;37;40m System Enclosure
+Format part Len : 21
+[0;37;40mStructure Handle: 3
+[0;37;40mManufacturer[0;37;40m: Unknown
+[0;37;40mType[0;37;40m: 3
+[0;37;40mSystem Enclosure or Chassis Types:[0;37;40m  Desktop
+Version[0;37;40m: 
+[0;37;40mSerialNumber[0;37;40m: 
+[0;37;40mAssetTag[0;37;40m: 
+[0;37;40mBootup state [0;37;40mSystem Enclosure or Chassis Status: [0;37;40m Safe
+Power Supply State [0;37;40mSystem Enclosure or Chassis Status: [0;37;40m Safe
+Thermal state [0;37;40mSystem Enclosure or Chassis Status: [0;37;40m Safe
+Security Status [0;37;40mSystem Enclosure or Chassis Security Status: [0;37;40m None
+Dump [0;37;40mOemDefined[0;37;40m
+size=4:
+[0;37;40m00000000: 00 00 00 00                                      *....*
+[0;37;40mHeight[0;37;40m: 0
+[0;37;40mNumberofPowerCords[0;37;40m: 0
+[0;37;40m
+[0;37;40m
+=========================================================
+[0;37;40mType=4, Handle=0x4
+Dump Structure as:
+[0;37;40mIndex=4,Length=0x39,[0;37;40mAddr=0xF0EA10DD
+[0;37;40m00000000: 04 30 04 00 00 03 02 01-00 00 00 00 00 00 00 00  *.0..............*
+[0;37;40m00000010: 01 00 00 00 00 00 00 00-01 06 FF FF FF FF FF FF  *................*
+[0;37;40m00000020: 00 00 00 00 00 00 00 00-02 00 00 00 00 00 00 00  *................*
+[0;37;40m00000030: 55 6E 6B 6E 6F 77 6E 00-00                       *Unknown..*
+[0;37;40mStructure Type:[0;37;40m Processor Information
+Format part Len : 48
+[0;37;40mStructure Handle: 4
+[0;37;40mSocketDesignation[0;37;40m: 
+[0;37;40mProcessor Type: [0;37;40m Central Processor
+Processor Family: [0;37;40mUnknown
+[0;37;40mProcessorManufacturer[0;37;40m: Unknown
+[0;37;40mDump [0;37;40mProcessorId[0;37;40m
+size=8:
+[0;37;40m00000000: 00 00 00 00 00 00 00 00-                         *........*
+[0;37;40mProcessorVersion[0;37;40m: Unknown
+[0;37;40mProcessor Information -  Voltage:
+[0;37;40mExternalClock[0;37;40m: 0
+[0;37;40mMaxSpeed[0;37;40m: 0
+[0;37;40mCurrentSpeed[0;37;40m: 0
+[0;37;40mProcessor Status:
+[0;37;40mCPU Socket Unpopulated
+[0;37;40mCPU Enabled
+[0;37;40mProcessor Upgrade: [0;37;40mNone
+L1CacheHandle[0;37;40m: 0xFFFF
+[0;37;40mL2CacheHandle[0;37;40m: 0xFFFF
+[0;37;40mL3CacheHandle[0;37;40m: 0xFFFF
+[0;37;40mSerialNumber[0;37;40m: 
+[0;37;40mAssetTag[0;37;40m: 
+[0;37;40mPartNumber[0;37;40m: 
+[0;37;40mCoreCount[0;37;40m: 0
+[0;37;40mEnabledCoreCount[0;37;40m: 0
+[0;37;40mThreadCount[0;37;40m: 0
+[0;37;40mProcessor Characteristics: [0;37;40mNo Info[0;37;40m
+CoreCount2[0;37;40m: 0
+[0;37;40mEnabledCoreCount2[0;37;40m: 0
+[0;37;40mThreadCount2[0;37;40m: 0
+[0;37;40m
+[0;37;40m
+=========================================================
+[0;37;40mType=32, Handle=0x5
+Dump Structure as:
+[0;37;40mIndex=5,Length=0xD,[0;37;40mAddr=0xF0EA1116
+[0;37;40m00000000: 20 0B 05 00 00 00 00 00-00 00 00 00 00           * ............*
+[0;37;40mStructure Type:[0;37;40m System Boot Information 
+Format part Len : 11
+[0;37;40mStructure Handle: 5
+[0;37;40mDump [0;37;40mReserved[0;37;40m
+size=6:
+[0;37;40m00000000: 00 00 00 00 00 00                                *......*
+[0;37;40mSystem Boot Status: [0;37;40m No errors detected[0;37;40m
+[0;37;40m
+=========================================================
+[0;37;40mType=127, Handle=0x6
+Dump Structure as:
+[0;37;40mIndex=6,Length=0x6,[0;37;40mAddr=0xF0EA1123
+[0;37;40m00000000: 7F 04 06 00 00 00                                *......*
+[0;37;40mStructure Type:[0;37;40m End-of-Table 
+Format part Len : 4
+[0;37;40mStructure Handle: 6
+[0;37;40mThis structure indicates the End-of-table!
+[0;37;40m
+[0;37;40m
+=========================================================
+[0;37;40m[69;1H[1;33;40mShell> [0;37;40m[0;37;40m
