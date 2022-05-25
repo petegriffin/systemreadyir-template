@@ -231,7 +231,7 @@ vendor=rockchip
 
 Environment size: 4970/32764 bytes
 => printenv -e
-7[r[999;999H[6n8Card did not respond to voltage select! : -110
+78Card did not respond to voltage select! : -110
 Scanning disk mmc@fe310000.blk...
 Disk mmc@fe310000.blk not ready
 Scanning disk mmc@fe320000.blk...
